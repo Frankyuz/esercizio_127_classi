@@ -53,6 +53,9 @@ int main(){
 	default:
 		break;
 	}
-	Ora prova;
-	prova = 21 + 14;
-}
+	Ora somma;
+	Ora ora1 = Ora(12,23,11);
+	Ora ora2 = Ora(1, 0, 0);
+	somma = ora1 + ora2;
+	printf("La somma delle tue ore e' %s", somma.gettime());
+ }

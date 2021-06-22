@@ -65,15 +65,12 @@ char *Ora::gettime() {
 	return stringa1;
 }
 
-Ora operator+(Ora& p1, Ora& p2)
+Ora Ora::operator+(const Ora& p1)
 {
-	Ora ptemp;
-	ptemp.h = p1.ore() + p2.ore();
-	return Ora();
+	Ora temp = Ora();
+	temp.h = (this->h + p1.h);
+	temp.m = (this->m + p1.m);
+	temp.s = (this->s + p1.s);
+	return Ora((this->h + p1.h), (this->m + p1.m), (this->s + p1.s));
 }
-
-
-
-
-
 

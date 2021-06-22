@@ -25,7 +25,7 @@ public:
 	int sec();
 
 	//Operatori
-	friend Ora operator+(Ora& p1, Ora& p2);
+	Ora operator+(const Ora& p1);
 	Ora operator=(const Ora& p1);
 };
 
